@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCinema"
+        android:layout_width="@dimen/width_cinema_image"
+        android:layout_height="@dimen/height_cinema_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:src="@drawable/movie3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCinema"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/lbl_welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small"
+        android:text="@string/lbl_hello_welcome_to_gaxaly_app"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginStart="@dimen/margin_card_medium_2"
+        android:layout_marginEnd="@dimen/margin_card_medium_2"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:padding="@dimen/margin_medium_2"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:strokeColor="@color/white"
+        app:strokeWidth="0.7dp"
+        app:cornerRadius="8dp"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        android:text="@string/lbl_get_started"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

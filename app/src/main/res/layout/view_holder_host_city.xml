@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_xlarge"
+        android:text="Availible In"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChildCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_below="@id/tvCity"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_medium_2"
+    android:background="@color/colorAccent"
+    tools:context=".activities.TimeScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarTimeScreen"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@color/colorAccent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnTimeScreenBack"
+                android:layout_width="@dimen/date_padding"
+                android:layout_height="@dimen/date_padding"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:src="@drawable/ic_back_white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:clipToPadding="false"
+                android:paddingEnd="@dimen/margin_medium_2" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- NestedScrollView ka ma lo tok voo, recyclerview ka tu shi ta lout height ko u twr tl, scrolling behavior ll pr pee thrr -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBarTimeScreen"
+            android:background="@drawable/background_scrolling_view"
+            android:paddingBottom="@dimen/margin_medium_2"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_xxlarge">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHostCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium_3" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTimeScreenNext"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:text="@string/lbl_next"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="0.7dp" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

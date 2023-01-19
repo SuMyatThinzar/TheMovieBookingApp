@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_dotted_line.xml" value="0.135" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_genre_chip.xml" value="0.135" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_availible.xml" value="0.1545" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_selected.xml" value="0.1545" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_time_button.xml" value="0.158" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_time_button_color.xml" value="0.72" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/drawable/background_time_button_selected.xml" value="0.158" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_account.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_chose_card.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_home_screen.xml" value="0.125" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_movie_deeee.xml" value="0.2" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_movie_detail.xml" value="0.176" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_new_card.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_seating_plan.xml" value="0.264" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_snack_screen.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_time_screen.xml" value="0.1" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/activity_voucher.xml" value="0.264" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_login.xml" value="0.16" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_cast.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_child_city.xml" value="0.536" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_combo_set.xml" value="0.264" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_date.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_genre_chips.xml" value="0.6" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_host_city.xml" value="0.16" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie.xml" value="0.4" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie_seat.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_holder_payment_method.xml" value="0.264" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_item_card.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_account.xml" value="0.1868421052631579" />
+        <entry key="..\:/Android/AndroidStudioProjects/TheMovieBookingApp/app/src/main/res/layout/view_pod_movie.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

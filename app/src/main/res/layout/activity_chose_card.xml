@@ -1,0 +1,120 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SnackScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnChooseCardBack"
+            android:layout_width="@dimen/date_padding"
+            android:layout_height="@dimen/date_padding"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/ic_back_black" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_below="@id/btnChooseCardBack">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPaymentAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:text="Payment amount"
+                    android:textColor="@color/colorSecondaryText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPaymentAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPaymentAmountLabel"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="$ 926.21"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:textStyle="bold" />
+
+                <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                    android:id="@+id/vpCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_below="@id/tvPaymentAmount"
+                    tools:listitem="@layout/view_item_card"/>
+
+<!--                <com.github.islamkhsh.CardSliderViewPager-->
+<!--                    android:id="@+id/vpCard"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_below="@id/tvPaymentAmount"-->
+<!--                    android:layout_marginTop="@dimen/margin_medium_3"-->
+<!--                    app:cardSlider_otherPagesWidth="23dp"-->
+<!--                    app:cardSlider_pageMargin="8dp"-->
+<!--                    app:cardSlider_smallAlphaFactor="0.3"-->
+<!--                    app:cardSlider_smallScaleFactor="0.8" />-->
+<!--&lt;!&ndash;                app:auto_slide_time="2"&ndash;&gt;-->
+
+                <RelativeLayout
+                    android:id="@+id/btnAddNewCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vpCard"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAdd"
+                        android:layout_width="@dimen/margin_xlarge"
+                        android:layout_height="@dimen/margin_xlarge"
+                        android:src="@drawable/ic_add" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_toEndOf="@id/ivAdd"
+                        android:paddingTop="@dimen/margin_small"
+                        android:text="Add new card"
+                        android:textColor="@color/colorGreen" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChooseCardConfirm"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:text="@string/lbl_confirm"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="0.7dp" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

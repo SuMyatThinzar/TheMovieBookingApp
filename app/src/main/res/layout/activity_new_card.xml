@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    android:layout_marginEnd="@dimen/margin_medium_2"
+    tools:context=".activities.NewCardActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnNewCardBack"
+        android:layout_width="@dimen/date_padding"
+        android:layout_height="@dimen/date_padding"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:src="@drawable/ic_back_black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNewCardBack"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="Card Number"
+        android:textColor="@color/colorSecondaryText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardNumber"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:hint="1234.5678.9101.8014"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/text_small" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputCardNumber"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="Card Holder"
+        android:textColor="@color/colorSecondaryText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputCardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardHolder"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:hint="Lily Johnsson"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputCardHolder"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpirationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="Expiration Date"
+                android:textColor="@color/colorSecondaryText" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputExpirationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvExpirationDate"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:hint="08/21"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_small" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCVC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="CVC"
+                android:textColor="@color/colorSecondaryText" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputCVC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCVC"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:hint="150"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_small" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNewCardConfirm"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingTop="@dimen/margin_medium_2"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:text="@string/lbl_confirm"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="0.7dp" />
+
+</RelativeLayout>

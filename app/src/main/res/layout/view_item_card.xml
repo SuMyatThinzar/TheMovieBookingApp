@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_medium">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#9378fc"
+        app:cardCornerRadius="@dimen/margin_medium">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVisaLogo"
+                android:layout_width="@dimen/width_visa_logo"
+                android:layout_height="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:src="@drawable/visa" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_large"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:src="@drawable/ic_more" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCarouselCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="* * * *   * * * *   * * * *  8 0 1 4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardHolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tvCardHolderLabel"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:text="CARD HOLDER"
+                android:textColor="#BEC8DE"
+                android:textSize="@dimen/text_small" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCardHolderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:text="Lily Johnson"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCarouselExpireDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:text="08/21"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpireDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#BEC8DE"
+                android:layout_above="@id/tvCarouselExpireDate"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:textSize="@dimen/text_small"
+                android:text="EXPIRES"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

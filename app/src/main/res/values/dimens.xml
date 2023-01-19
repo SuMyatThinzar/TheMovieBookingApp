@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Generic Dimensions   -->
+    <dimen name ="margin_small">4dp</dimen >
+    <dimen name ="margin_card_medium">6dp</dimen>
+    <dimen name ="margin_medium">8dp</dimen>
+    <dimen name ="margin_medium_2">16dp</dimen>
+    <dimen name ="margin_card_medium_2">12dp</dimen>
+    <dimen name = "margin_medium_3">20dp</dimen>
+    <dimen name = "margin_large" >24dp</dimen>
+    <dimen name = "margin_xlarge">32dp</dimen>
+    <dimen name = "margin_xxlarge">48dp</dimen>
+
+    <dimen name = "margin_small_n">-4dp</dimen>
+    <dimen name = "margin_card_medium_n">-6dp</dimen>
+    <dimen name = "margin_medium_n">-8dp</dimen>
+    <dimen name = "margin_card_medium_2_n">-12dp</dimen>
+    <dimen name = "margin_medium_2_n">-16dp</dimen>
+    <dimen name = "margin_medium_3_n">-18dp</dimen>
+    <dimen name = "margin_large_n">-24dp</dimen>
+    <dimen name = "margin_xlarge_n">-32dp</dimen>
+
+    <dimen name = "text_smaller">8sp</dimen>
+    <dimen name = "text_small">12sp</dimen>
+    <dimen name = "text_regular">14sp</dimen>
+    <dimen name = "text_regular_2x">16sp</dimen>
+    <dimen name = "text_regular_3x">28sp</dimen>
+    <dimen name = "text_heading_1x">24sp</dimen>
+    <dimen name = "text_heading_2x">32sp</dimen>
+    <dimen name = "text_big">40sp</dimen>
+    <dimen name = "text_big_2x">60sp</dimen>
+    <dimen name = "text_big_3x">88sp</dimen>
+
+    <!--  Specific Dimensions  -->
+    <dimen name="width_movie">130dp</dimen>
+    <dimen name="height_movie">180dp</dimen>
+    <dimen name="text_small_movie">6sp</dimen>
+    <dimen name="height_banner_movie_detail">350dp</dimen>
+    <dimen name="width_detail_play_button">60dp</dimen>
+    <dimen name="height_detail_play_button">60dp</dimen>
+    <dimen name="width_date_back_button">65dp</dimen>
+    <dimen name="height_date_back_button">65dp</dimen>
+    <dimen name="date_padding">30dp</dimen>
+    <dimen name="width_visa_logo">37dp</dimen>
+    <dimen name="width_cinema_image">350dp</dimen>
+    <dimen name="height_cinema_image">400dp</dimen>
+    <dimen name="width_profile">55dp</dimen>
+    <dimen name="height_profile">55dp</dimen>
+    <dimen name="margin_movie_seat">6dp</dimen>
+    <dimen name="margin_top_drawer">75dp</dimen>
+    <dimen name="margin_bottom_credit_card">100dp</dimen>
+    <dimen name="margin_height_cinema_seat">22dp</dimen>
+
+</resources>

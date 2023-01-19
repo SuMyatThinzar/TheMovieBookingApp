@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SnackScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarSnackScreen"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnSnackBarBack"
+                android:layout_width="@dimen/date_padding"
+                android:layout_height="@dimen/date_padding"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:src="@drawable/ic_back_black" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBarSnackScreen"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvComboSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_xxlarge"
+                    android:layout_below="@id/rvComboSet"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:hint="Enter promo code"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="italic" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPromoCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInputPromoCode"
+                    android:text="Don't have any promo code ?"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_small" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInputPromoCode"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_toEndOf="@id/tvPromoCode"
+                    android:text="Get it now"
+                    android:textSize="@dimen/text_small" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSubTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPromoCode"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Sub total : 0$"
+                    android:textColor="@color/colorGreen" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSubTotal"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Payment method"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPaymentMethod"
+                    android:layout_marginBottom="@dimen/margin_bottom_credit_card" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSnackScreenPay"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:text="Pay $40.00"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="0.7dp" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

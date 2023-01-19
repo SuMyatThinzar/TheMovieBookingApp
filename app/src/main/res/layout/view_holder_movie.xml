@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_movie"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMovie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_movie"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMoviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_detective_pikachu" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewMovie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_smaller"
+        android:textStyle="bold"
+        android:text="Detective Pikachu"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMovieName"
+        android:layout_centerHorizontal="true"
+        android:text="Mystery/Adventure - 1hr 45m"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_small_movie" />
+
+</RelativeLayout>

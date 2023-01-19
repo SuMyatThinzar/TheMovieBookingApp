@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SignInFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignInEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:text="@string/lbl_email"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorSecondaryText" />
+
+            <EditText
+                android:id="@+id/etSignInEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignInEmail"
+                android:inputType="textEmailAddress" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignInPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSignInEmail"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Password"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorSecondaryText" />
+
+            <EditText
+                android:id="@+id/etSignInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignInPassword"
+                android:inputType="numberPassword" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignInName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSignInPassword"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Name"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorSecondaryText" />
+
+            <EditText
+                android:id="@+id/etSignInName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignInName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignInPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSignInName"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Phone number"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorSecondaryText" />
+
+            <EditText
+                android:id="@+id/etSignInPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSignInPhoneNumber" />
+
+            <include
+                android:id="@+id/vpSignIn"
+                layout="@layout/view_pod_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSignInPhoneNumber"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
