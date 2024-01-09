@@ -85,6 +85,7 @@ class HomeScreenActivity : AppCompatActivity(), MovieDetailDelegate {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu)
         supportActionBar?.title = ""
+
         val toggle = ActionBarDrawerToggle(
             this,
             drawerLayout,

@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".fragments.SignInFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSignInEmail"
@@ -28,14 +30,13 @@
                 android:id="@+id/etSignInEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvSignInEmail"
+                android:singleLine="true"
                 android:inputType="textEmailAddress" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSignInPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etSignInEmail"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_large"
                 android:text="Password"
@@ -46,14 +47,13 @@
                 android:id="@+id/etSignInPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvSignInPassword"
+                android:singleLine="true"
                 android:inputType="numberPassword" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSignInName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etSignInPassword"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_large"
                 android:text="Name"
@@ -64,13 +64,12 @@
                 android:id="@+id/etSignInName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvSignInName" />
+                android:singleLine="true" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSignInPhoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etSignInName"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/margin_large"
                 android:text="Phone number"
@@ -81,16 +80,15 @@
                 android:id="@+id/etSignInPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvSignInPhoneNumber" />
+                android:singleLine="true" />
 
             <include
                 android:id="@+id/vpSignIn"
                 layout="@layout/view_pod_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etSignInPhoneNumber"
                 android:layout_marginTop="@dimen/margin_xlarge" />
 
-        </RelativeLayout>
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
